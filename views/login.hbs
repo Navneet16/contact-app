@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+<head> 
+<title>{{title}}</title>
+<script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+<script src="/javascripts/login.js"/>
+<link href="stylesheets/style.css" rel="stylesheet" type="text/css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>        
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+{{!-- <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/js/bootstrap.min.js" integrity="sha384-h0AbiXch4ZDo7tp9hKZ4TsHbi047NrKGLO3SEJAg45jXxnGIfYzk4Si90RDIqNm1" crossorigin="anonymous"></script>        --}}
+        <style>
+                body{
+                        font-family: 'Raleway',sans-serif;
+                    }     
+
+        </style> 
+</head>
+<body>
+   
+    <div class="jumbotron">
+       <h1 class="text-center">My Contacts</h1>
+    </div>
+         <div class="row">
+             <div class="col-md-12 panel">
+    
+                    <div class="box1">
+                            <div class="row form-group form-inline">
+                                <h2>Login</h2>
+                                <input type="text" name ="email" id="emaillog" class="form-control" placeholder="email" required>    
+                                <input type="password" name ="password" id="passwordlog" class="form-control" placeholder="password" required>    
+                                <button type="button" class="btn btn-default" onclick="userLogin()"><b>Login</b></button>
+                                <button type="button" class="btn btn-default" data-toggle="modal" data-target="#myModal" ><b>Sign Up</b></button>
+                                         <div class="modal fade" id="myModal" role="dialog">
+                                                <div class="modal-dialog">
+                                                
+                                                        <!-- Modal content-->
+                                                        <div class="modal-content">
+                                                            <div class="modal-header">
+                                                            <button type="button" class="close" data-dismiss="modal">&times;</button>
+                                                            <h4 class="modal-title">Sign Up</h4>
+                                                            </div>
+                                                            <div class="modal-body">
+                                                               <div id="afterSignUp">       
+                                                                <input type="text" name ="email" id="emailsign" class="form-control" placeholder="email" required>    
+                                                                <input type="password" name ="password" id="passwordsign" class="form-control" placeholder="password" required>    
+                                                                <button type="button" class="btn btn-default" onclick="userSignUp()"><b>SignUp</b></button>
+                                                               </div> 
+                                                            </div>
+                                                            <div class="modal-footer">
+                                                            <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                                                            </div>
+                                                        </div>
+                                                </div>  
+                                         </div>     
+                            </div>
+                     </div>
+                     
+                                 
+                    
+             </div>
+         </div>
+          
+</body>
+</html>    
